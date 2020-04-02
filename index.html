@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>TEST Twitter cards</title>
+
+  <meta property="og:title" content="Twitter cards tester" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://boogheta.github.io/twitter-cards-test/" />
+  <meta property="og:image" content="https://boogheta.github.io/coronavirus-countries/img/screenshotv2.png"/>
+  <meta property="og:description" content="This should load dynamically a different card image via JS, if Facebook handles this"/>
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@boogheta">
+  <meta name="twitter:creator" content="@boogheta">
+  <meta name="twitter:title" content="Twitter cards tester">
+  <meta name="twitter:description" content="This should load dynamically a different card image via JS, if Twitter handles this">
+  <meta name="twitter:image" content="https://boogheta.github.io/coronavirus-countries/img/screenshotv2.png">
+ </head>
+ <body>
+  <noscript><strong>Coronavirus country comparator requires JavaScript. Please enable it to continue.</strong></noscript>
+  <script type="text/javascript">
+
+setTimeout(function() {
+  var el = document.querySelector("meta[name='twitter:image'");
+  el.setAttribute("content", "http://manet.medialab.sciences-po.fr/?url=https%3A%2F%2Fboogheta.github.io%2Fcoronavirus-countries%2F%23confirmed%26recovered%26deceased%26currently_sick%26ratio%26daily%26multiples%26places%3DBelgium%2CChina%2CFrance%2CIran%2CItaly%2CTurkey%2CUnited%2520Kingdom%26alignTo%3Ddeceased%26oldrecovered&width=1500&height=1000");
+}, 200);
+
+  </script>
+ </body>
+</html>
+
